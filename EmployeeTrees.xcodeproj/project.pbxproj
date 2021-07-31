@@ -14,6 +14,7 @@
 		A536A48626B4D75800110F49 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A536A48526B4D75800110F49 /* Preview Assets.xcassets */; };
 		A536A48F26B4D78C00110F49 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = A536A48E26B4D78C00110F49 /* Employee.swift */; };
 		A57FA25826B4FD0A007251AA /* InsertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57FA25726B4FD0A007251AA /* InsertView.swift */; };
+		A5D25D9126B50DA000D6EB5D /* BranchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D25D9026B50DA000D6EB5D /* BranchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		A536A48726B4D75800110F49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A536A48E26B4D78C00110F49 /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
 		A57FA25726B4FD0A007251AA /* InsertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertView.swift; sourceTree = "<group>"; };
+		A5D25D9026B50DA000D6EB5D /* BranchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				A536A48426B4D75800110F49 /* Preview Content */,
 				A51452CA26B4FA9100A92F27 /* SearchView.swift */,
 				A57FA25726B4FD0A007251AA /* InsertView.swift */,
+				A5D25D9026B50DA000D6EB5D /* BranchView.swift */,
 			);
 			path = EmployeeTrees;
 			sourceTree = "<group>";
@@ -155,6 +158,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5D25D9126B50DA000D6EB5D /* BranchView.swift in Sources */,
 				A51452CB26B4FA9100A92F27 /* SearchView.swift in Sources */,
 				A536A48126B4D75800110F49 /* ContentView.swift in Sources */,
 				A536A48F26B4D78C00110F49 /* Employee.swift in Sources */,

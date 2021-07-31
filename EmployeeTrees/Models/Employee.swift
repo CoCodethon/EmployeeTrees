@@ -11,7 +11,7 @@ enum EmployeeType {
     case loanWolf
 }
 
-struct Employee {
+struct Employee : Hashable {
     let firstName : String
     let lastName : String
     var type : EmployeeType

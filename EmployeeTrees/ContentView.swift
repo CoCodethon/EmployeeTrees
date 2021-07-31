@@ -13,7 +13,22 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             ScrollView(.vertical) {
-                
+                ForEach(tree, id: \.self.lastName) { name in
+                    NavigationLink(
+                        destination: BranchView(),
+                        label: {
+                            HStack {
+                                Image(systemName: "person.circle")
+                                    .frame(width: 65, height: 65)
+                                    .font(.system(size: 53))
+                                Text("\(name.firstName) \(name.lastName)")
+                                    .bold()
+                                    .font(.system(size: 32))
+                                Spacer()
+                            }
+                            .padding()
+                        })
+                }
             }
             .navigationBarTitle("Top-level Employees", displayMode: .inline)
             .toolbar {
