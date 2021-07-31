@@ -12,21 +12,19 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             ScrollView(.vertical) {
-                ForEach(tree.employees) { employee in
-                    NavigationLink(
-                        destination: BranchView(),
-                        label: {
-                            HStack {
-                                Image(systemName: "person.circle")
-                                    .frame(width: 65, height: 65)
-                                    .font(.system(size: 53))
-                                Text(employee.fullName)
-                                    .bold()
-                                    .font(.system(size: 32))
-                                Spacer()
-                            }
-                            .padding()
-                        })
+                ScrollView(.horizontal) {
+                    ForEach(tree.employees) { employee in
+                        EmployeeDetailView(employee: tree.employees[0])
+                    }
+                }//Horizontal SV
+                Text("Underlings")
+                    .font(.largeTitle)
+                ScrollView(.horizontal) {
+                    ForEach(tree.employees[0].underlings, id: \.self) { employee in
+                        NavigationLink(destination: ContentView()) {
+                            EmployeeDetailView(employee: employee)
+                        }
+                    }
                 }
             }
             .navigationBarTitle("Top-level Employees", displayMode: .inline)
@@ -43,7 +41,7 @@ struct ContentView: View {
                         destination: SearchView(),
                         label: {
                             Image(systemName: "magnifyingglass")
-                    })
+                        })
                 }
             }
         }
