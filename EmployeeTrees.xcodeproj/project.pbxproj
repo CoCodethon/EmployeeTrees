@@ -7,19 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A51452CB26B4FA9100A92F27 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51452CA26B4FA9100A92F27 /* SearchView.swift */; };
 		A536A47F26B4D75800110F49 /* EmployeeTreesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A536A47E26B4D75800110F49 /* EmployeeTreesApp.swift */; };
 		A536A48126B4D75800110F49 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A536A48026B4D75800110F49 /* ContentView.swift */; };
 		A536A48326B4D75800110F49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A536A48226B4D75800110F49 /* Assets.xcassets */; };
 		A536A48626B4D75800110F49 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A536A48526B4D75800110F49 /* Preview Assets.xcassets */; };
+		A536A48F26B4D78C00110F49 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = A536A48E26B4D78C00110F49 /* Employee.swift */; };
+		A57FA25826B4FD0A007251AA /* InsertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57FA25726B4FD0A007251AA /* InsertView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A51452CA26B4FA9100A92F27 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		A536A47B26B4D75800110F49 /* EmployeeTrees.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmployeeTrees.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A536A47E26B4D75800110F49 /* EmployeeTreesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeTreesApp.swift; sourceTree = "<group>"; };
 		A536A48026B4D75800110F49 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A536A48226B4D75800110F49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A536A48526B4D75800110F49 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A536A48726B4D75800110F49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A536A48E26B4D78C00110F49 /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		A57FA25726B4FD0A007251AA /* InsertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +58,14 @@
 		A536A47D26B4D75800110F49 /* EmployeeTrees */ = {
 			isa = PBXGroup;
 			children = (
+				A536A48D26B4D76200110F49 /* Models */,
 				A536A47E26B4D75800110F49 /* EmployeeTreesApp.swift */,
 				A536A48026B4D75800110F49 /* ContentView.swift */,
 				A536A48226B4D75800110F49 /* Assets.xcassets */,
 				A536A48726B4D75800110F49 /* Info.plist */,
 				A536A48426B4D75800110F49 /* Preview Content */,
+				A51452CA26B4FA9100A92F27 /* SearchView.swift */,
+				A57FA25726B4FD0A007251AA /* InsertView.swift */,
 			);
 			path = EmployeeTrees;
 			sourceTree = "<group>";
@@ -67,6 +76,14 @@
 				A536A48526B4D75800110F49 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A536A48D26B4D76200110F49 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A536A48E26B4D78C00110F49 /* Employee.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +155,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A51452CB26B4FA9100A92F27 /* SearchView.swift in Sources */,
 				A536A48126B4D75800110F49 /* ContentView.swift in Sources */,
+				A536A48F26B4D78C00110F49 /* Employee.swift in Sources */,
 				A536A47F26B4D75800110F49 /* EmployeeTreesApp.swift in Sources */,
+				A57FA25826B4FD0A007251AA /* InsertView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
