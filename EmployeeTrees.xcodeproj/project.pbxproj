@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7996973C26B54D5B00A6BE21 /* TreeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7996973B26B54D5B00A6BE21 /* TreeModel.swift */; };
 		A51452CB26B4FA9100A92F27 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51452CA26B4FA9100A92F27 /* SearchView.swift */; };
 		A536A47F26B4D75800110F49 /* EmployeeTreesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A536A47E26B4D75800110F49 /* EmployeeTreesApp.swift */; };
 		A536A48126B4D75800110F49 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A536A48026B4D75800110F49 /* ContentView.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7996973B26B54D5B00A6BE21 /* TreeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeModel.swift; sourceTree = "<group>"; };
 		A51452CA26B4FA9100A92F27 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		A536A47B26B4D75800110F49 /* EmployeeTrees.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmployeeTrees.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A536A47E26B4D75800110F49 /* EmployeeTreesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeTreesApp.swift; sourceTree = "<group>"; };
@@ -41,6 +43,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7996973826B541EA00A6BE21 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A57FA25726B4FD0A007251AA /* InsertView.swift */,
+				A5D25D9026B50DA000D6EB5D /* BranchView.swift */,
+				A51452CA26B4FA9100A92F27 /* SearchView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7996973A26B54D1100A6BE21 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				7996973B26B54D5B00A6BE21 /* TreeModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		A536A47226B4D75800110F49 = {
 			isa = PBXGroup;
 			children = (
@@ -60,15 +80,14 @@
 		A536A47D26B4D75800110F49 /* EmployeeTrees */ = {
 			isa = PBXGroup;
 			children = (
-				A536A48D26B4D76200110F49 /* Models */,
 				A536A47E26B4D75800110F49 /* EmployeeTreesApp.swift */,
 				A536A48026B4D75800110F49 /* ContentView.swift */,
+				7996973A26B54D1100A6BE21 /* ViewModels */,
+				A536A48D26B4D76200110F49 /* Models */,
+				7996973826B541EA00A6BE21 /* Views */,
 				A536A48226B4D75800110F49 /* Assets.xcassets */,
 				A536A48726B4D75800110F49 /* Info.plist */,
 				A536A48426B4D75800110F49 /* Preview Content */,
-				A51452CA26B4FA9100A92F27 /* SearchView.swift */,
-				A57FA25726B4FD0A007251AA /* InsertView.swift */,
-				A5D25D9026B50DA000D6EB5D /* BranchView.swift */,
 			);
 			path = EmployeeTrees;
 			sourceTree = "<group>";
@@ -162,6 +181,7 @@
 				A51452CB26B4FA9100A92F27 /* SearchView.swift in Sources */,
 				A536A48126B4D75800110F49 /* ContentView.swift in Sources */,
 				A536A48F26B4D78C00110F49 /* Employee.swift in Sources */,
+				7996973C26B54D5B00A6BE21 /* TreeModel.swift in Sources */,
 				A536A47F26B4D75800110F49 /* EmployeeTreesApp.swift in Sources */,
 				A57FA25826B4FD0A007251AA /* InsertView.swift in Sources */,
 			);

@@ -8,12 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
-    let tree : [Employee] = [Employee(firstName: "El", lastName: "Supremo", type: EmployeeType.teamLeader, underlings: [])]
-    
+    @EnvironmentObject var tree : TreeModel
     var body: some View {
         NavigationView {
             ScrollView(.vertical) {
-                ForEach(tree, id: \.self.lastName) { name in
+                ForEach(tree.employees) { employee in
                     NavigationLink(
                         destination: BranchView(),
                         label: {
@@ -21,7 +20,7 @@ struct ContentView: View {
                                 Image(systemName: "person.circle")
                                     .frame(width: 65, height: 65)
                                     .font(.system(size: 53))
-                                Text("\(name.firstName) \(name.lastName)")
+                                Text(employee.fullName)
                                     .bold()
                                     .font(.system(size: 32))
                                 Spacer()
@@ -54,6 +53,7 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(TreeModel())
             .preferredColorScheme(.dark)
     }
 }
